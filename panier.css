@@ -1,13 +1,74 @@
 body {
     font-family: Arial, sans-serif;
-}
-.articles { display: flex;
-justify-content: center;
-align-items: center;
-gap: 50px;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
 }
 
-.article {padding: 100px;
-    border: solid;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;}
+.panier {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les articles */
+}
+
+.article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c; /* Couleur du prix */
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-plus {
+    background-color: #28a745; /* Vert */
+    color: white;
+}
+
+.btn-moins {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+}
+
+.btn-supprimer {
+    background-color: #ff5733; /* Orange */
+    color: white;
+}
+
+.btn-like {
+    background-color: #ffc107; /* Jaune */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8; /* Effet au survol */
+}
+

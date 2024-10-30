@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon Panier</title>
     <link rel="stylesheet" href="panier.css">
 </head>
 <body>
-    <div class="panier"><h1> Mon panier</h1></div>
+    <div class="panier">
+        <h1>Mon Panier</h1>
+    </div>
 
     <div class="articles">
         <div class="article">
-            <h2> article 1</h2>
-            <p>prix: <span class="price"> 20 dt </span> </p>
-            <button id="plus"> +  </button>
-            <span value="1" class="quantity"> 1</span>
-            <button id="moins">-</button>
-            <button> supprimer</button>
+            <h2>Article 1</h2>
+            <p>Prix : <span class="price">20</span> dt</p>
+            <button class="btn-plus">+</button>
+            <span value="1" class="quantity">1</span>
+            <button class="btn-moins">-</button>
+            <button class="btn-supprimer">Supprimer</button>
             <button class="btn-like">&#10084;</button>
         </div>
         <div class="article">
-            <h2> article 2</h2>
-            <p>prix: <span class="price"> 20 dt </span> </p>
-            <button id="plus"> +  </button>
-            <span> 1</span>
-            <button id="moins">-</button>
-            <button> supprimer</button>
+            <h2>Article 2</h2>
+            <p>Prix : <span class="price">20</span> dt</p>
+            <button class="btn-plus">+</button>
+            <span value="1" class="quantity">1</span>
+            <button class="btn-moins">-</button>
+            <button class="btn-supprimer">Supprimer</button>
             <button class="btn-like">&#10084;</button>
         </div>
-        
     </div>
+
     <div>
-        <p>Prix total:<span id="total"> </p>
+        <p>Prix total : <span id="total">0</span> dt</p>
     </div>
-
-
-
 
     <script src="panier.js"></script>
 </body>
